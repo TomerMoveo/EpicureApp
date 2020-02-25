@@ -1,0 +1,46 @@
+// Muli
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600&display=swap');
+
+@mixin fontMuli ($style-weight){
+  font-family: "Muli";
+  font-weight: $style-weight;
+}
+@mixin flexCenter ($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: flex-start;
+  align-items: center;
+}
+.smallCards {
+  padding-left: 12px;
+    .card {
+      height: 230px;
+      width: 150px;
+      @include flexCenter(column);
+      background-color: #fcf3e0;
+      .image {
+        width: 150px;
+        height: 144px;
+      }
+        .title {
+          @include fontMuli(800);
+          width: 90px;
+          padding-top: 10px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          color: rgb(41, 41, 41);
+        }
+    }
+  }
+
+// ## MOBILE ## //
+
+.mobile {
+  .smallCards {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

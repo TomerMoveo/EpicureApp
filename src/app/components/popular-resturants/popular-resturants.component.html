@@ -1,0 +1,9 @@
+<div ngClass.xs="mobile">
+  <div class="pupopularRestaurants">
+    <div class="card">
+      <img class="images" *ngIf="popularCard" [src]="popularCard.image" />
+      <div class="title">{{ popularCard.title }}</div>
+      <div class="chefName">{{ popularCard.chefName }}</div>
+    </div>
+  </div>
+</div>

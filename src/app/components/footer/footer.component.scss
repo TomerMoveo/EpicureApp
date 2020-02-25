@@ -1,0 +1,58 @@
+// Gothic
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:200,500&display=swap');
+
+$fontstyleGothic: "Gothic A1";
+
+
+.footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  .names-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $fontstyleGothic;
+    font-weight: 200;
+    font-size: 0.6vw;
+    .contact-us {
+    padding-left: 12vw;
+    }
+    .privacy-policy {
+    padding-right: 12vw;
+    }
+  }
+}
+
+// # MOBILE DESIGN # //
+
+.mobile {
+  .footer {
+    height: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    .names-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: $fontstyleGothic;
+      font-weight: 200;
+      font-size: 12px;
+      .contact-us {
+      padding-left: 0;
+      padding-top: 4%;
+      }
+      .terms-of-use {
+        padding-top: 4%;
+      }
+      .privacy-policy {
+      padding-top: 4%;
+      padding-right: 0;
+      }
+    }
+  }
+}

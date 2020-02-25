@@ -1,0 +1,74 @@
+
+// Muli
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600&display=swap');
+
+@mixin headlineStyle {
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 28px;
+  word-spacing: 3px;
+  color: black;
+}
+@mixin descriptionStyle {
+  font-weight: 100;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: rgb(83, 83, 83);
+}
+@mixin flexCenter ($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+$backgroundCard: #fcf3e0;
+
+.pupopularRestaurants {
+  padding-left: 6px;
+  .card {
+    width: 280px;
+    background-color: $backgroundCard;
+    @include flexCenter(column);
+    .images {
+      width: 280px;
+      height: auto;
+    }
+    .title {
+      @include headlineStyle();
+      margin-top: 18px;
+    }
+    .chefName {
+      @include descriptionStyle();
+      margin-top: 3px;
+      margin-bottom: 13px;
+    }
+  }
+}
+
+
+// #### MOBILE #### //
+
+.mobile {
+  .pupopularRestaurants {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    .card {
+      width: 75%;
+      .images {
+        width: 100%;
+        height: auto;
+      }
+      .title {
+        @include headlineStyle();
+        margin-top: 18px;
+      }
+      .chefName {
+        @include descriptionStyle();
+        margin-top: 3px;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+

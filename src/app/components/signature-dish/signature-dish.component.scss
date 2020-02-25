@@ -1,0 +1,116 @@
+// Muli
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600&display=swap');
+
+@mixin headlineStyle ($weight){
+  font-family: "Muli";
+  font-weight: $weight;
+  font-size: 26px;
+  word-spacing: 3px;
+  color: black;
+}
+@mixin descriptionStyle {
+  font-weight: 100;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: rgb(83, 83, 83);
+}
+@mixin flexCenter ($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: flex-start;
+  align-items: center;
+}
+$backgroundCard: #fcf3e0;
+
+
+.signatureDish {
+  padding-left: 6px;
+  .title {
+    @include headlineStyle(100);
+    font-size: 23px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 280px;
+    height: 500px;
+    background-color: $backgroundCard;
+    @include flexCenter(column);
+    .images {
+      width: 280px;
+      height: 210px;;
+    }
+    .dishName {
+      @include headlineStyle(400);
+      width: 90px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding-top: 5%;
+    }
+    .description {
+      @include flexCenter(column);
+      @include descriptionStyle();
+      display: flex;
+      text-align: center;
+      padding: 3%;
+      font-size: 17px;
+      width: 200px;
+      height: 100px;
+    }
+    .IconBox {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      .icon {
+        width: 30px;
+      }
+    }
+    .priceGroup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .line {
+        padding: 2px 10px 16px 10px;
+        color: rgba(136, 136, 136, 0.261);
+      }
+      .priceIcon {
+        width: 10px;
+        height: auto;
+        padding: 2px;
+      }
+    }
+  }
+}
+
+
+
+// ## MOBILE ## //
+
+.mobile {
+  .signatureDish {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    .images {
+      width: 100%;
+      height: 210px;;
+    }
+    .priceGroup {
+      .line {
+        padding-bottom: 5%;
+      }
+      .priceIcon {
+        padding: 2%;
+      }
+    }
+  }
+}

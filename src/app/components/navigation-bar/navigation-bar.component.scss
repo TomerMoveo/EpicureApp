@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:200,500&display=swap');
+
+@mixin bordersColor {
+  border-radius: 5px;
+  border: 1px solid #a8a8a8;
+}
+
+  .nav-container {
+    background-color: #ffffff;
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+  }
+  .flex-item {
+    color: rgb(138, 138, 138);
+    font-family: "Gothic A1";
+    font-weight: 200;
+  }
+  .left-elements{
+    display: flex;
+    align-items: center;
+    .logo-epicure {
+      padding-top: 6px;
+      width: 25px;
+    }
+    .epicure {
+      font-size: 1.5vw;
+      color:rgb(90, 90, 90);
+      margin-left: 6%;
+      margin-top: 2%;
+    }
+    .restaurants {
+      align-self: center;
+      margin-left: 17%;
+      margin-top: 1%;
+      font-size: 0.97vw;
+    }
+    .chefs {
+      align-self: center;
+      margin-left: 20%;
+      margin-top: 1%;
+      font-size: 0.97vw;
+    }
+  }
+  .right-elements {
+      display: flex;
+      flex-direction: row;
+      padding-right: 7%;
+
+    .searchBoxGroup {
+      display: flex;
+      flex-direction: row;
+      @include bordersColor();
+    }
+    .search-box-text {
+      align-self: center;
+      margin-top: 1%;
+      padding-left: 1vw;
+      font-size: 0.97vw;
+    }
+    .search-box-icon {
+      margin-top: 2%;
+      margin-left: 4vw;
+      padding-right: 1vw;
+      .logo-search {
+        width: 22px;
+      }
+    }
+    .user-icon {
+      margin-top: 2%;
+      margin-left: 1.5vw;
+      .logo-user {
+        width: 22px;
+      }
+    }
+    .bag-icon {
+      margin-top: 2%;
+      margin-left: 0.8vw;
+      padding-left: 0.5vw;
+      .logo-bag {
+        width: 22px;
+      }
+    }
+
+  }
+
+// #### MOBILE ####//
+
+.mobile {
+  .nav-container {
+    padding: 0 2%;
+    display: flex;
+    align-items: flex-start;
+    }
+    .logo-epicure {
+      padding-left: 130px;
+      width: 30px;
+    }
+    .right-elements {
+      display: flex;
+      flex-direction: row;
+      padding-right: 2%;
+      margin-top: 2%;
+    }
+    .hamburger-button {
+      padding-left: 15px;
+      padding-top: 10px;
+    }
+    .bag-icon {
+      padding-left: 18px;
+      padding-top: 4px;
+    }
+    .logo-user {
+      width: 22px;
+      padding-top: 4px;
+    }
+    .logo-search {
+      width: 18px;
+      height: 18px;
+      padding-right: 10px;
+      padding-top: 8px;
+    }
+    .searchBoxGroup {
+      border: solid 1px rgba(0, 0, 0, 0);
+    }
+
+
+
+  }
+
+

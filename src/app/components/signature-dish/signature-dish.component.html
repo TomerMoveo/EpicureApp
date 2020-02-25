@@ -1,0 +1,19 @@
+<div ngClass.xs="mobile">
+  <div class="signatureDish">
+    <div class="title"> {{signatureCard.title}} </div>
+    <div class="card">
+      <img class="images" [src]="signatureCard.image" width= 200px; height= auto;>
+      <div class="dishName"> {{signatureCard.dishName}} </div>
+      <div class="description"> {{signatureCard.description}} </div>
+      <div class="IconBox">
+        <img class="icon" [src]="signatureCard.icon" width= 30px; height= auto;>
+      </div>
+      <div class="priceGroup">
+        <div class="line">___________</div>
+        <img class="priceIcon" [src]="signatureCard.priceIcon">
+        <div class="price">{{signatureCard.price}}</div>
+        <div class="line">___________</div>
+      </div>
+    </div>
+  </div>
+</div>

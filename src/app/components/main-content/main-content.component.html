@@ -1,0 +1,189 @@
+
+<div ngClass.xs="mobile">
+  <div class="flex-main">
+
+<!-- /* ########### FIRST CONTENT ########### */ -->
+
+  <div class="first-content">
+      <div class="text-box-background" @fade>
+        <div class="box-elements">
+          <div class="epicure-headline">
+            Epicure works with the  top<br>
+            chef restuarants in Tel-Aviv
+          </div>
+          <div class="search-box-text">
+            <div>
+            <img class="search-icon" src="../../../assets/navigation-element/nav_search-icon.svg">
+            </div>
+            <div class="search-text">
+            Search for restaurant cuisene, chef
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="gold-buttons" fxHide.gt-xs='true'>
+          <div class="buttons-text-group">
+            <div class="text-chefs">
+              CHEFS
+            </div>
+            <div class="text-restaurants">
+              RESTAURANTS
+            </div>
+          </div>
+        </div>
+
+<!-- /* ########### SECOND CONTENT ########### */ -->
+
+  <div class="second-content">
+    <div class="headlinePopular">
+      THE POPULAR RESTAURANTS IN EPICURE :
+    </div>
+    <div class="restaurantsImageGroup">
+      <div class="images">
+            <swiper>
+              <app-popular-resturants *ngFor="let popularCard of popularCards" [popularCard]="popularCard" fxHide.gt-xs='true'></app-popular-resturants>
+            </swiper>
+            <app-popular-resturants *ngFor="let popularCard of popularCards" [popularCard]="popularCard" fxHide.xs='true'></app-popular-resturants>
+          </div>
+      <div class="allRestaurantsText" fxHide.xs>
+          All Restaurants >>
+      </div>
+    </div>
+  </div>
+
+<!-- /* ########### THIRD CONTENT ########### */ -->
+
+  <div class="third-content">
+    <div class="signature-dish-text">
+      SIGNATURE DISH OF :
+    </div>
+    <div class="signatureDishCards">
+      <swiper>
+        <app-signature-dish *ngFor="let signatureCard of signatureCards" [signatureCard]="signatureCard" fxHide.gt-xs='true'></app-signature-dish>
+      </swiper>
+      <app-signature-dish *ngFor="let signatureCard of signatureCards" [signatureCard]="signatureCard" fxHide.xs='true'></app-signature-dish>
+    </div>
+  </div>
+
+  <!-- ########### FOURTH CONTENT ########### -->
+
+  <div class="fourth-content">
+    <div class="meaning-icons-text">
+      THE MEANING OF OUR ICONS :
+    </div>
+    <div class="icons-meaning-table">
+      <table class="icons-meaning">
+        <td><img class="imageMeaning" src="../../../assets/main-contant/fourth/spicy-icon.svg"></td>
+        <td><img class="imageMeaning" src="../../../assets/main-contant/fourth/vegetarian.svg"></td>
+        <td><img class="imageMeaning" src="../../../assets/main-contant/fourth/vegan-icon.svg"></td>
+      </table>
+    </div>
+    <div class="icons-names-group">
+      <div class="icons-names">
+        Spicy Vegitarian Vegan
+      </div>
+    </div>
+  </div>
+
+  <!-- ########### FIFTH A CONTENT ########### -->
+
+  <div class="fifth-content">
+    <div class="chef-of-the-week-group">
+      <div class="chef-week-headline">
+        CHEF OF THE WEEK :
+      </div>
+      <div class="picture-text-group">
+          <div class="chef-picture">
+            <img class="yossi-image" src="../../../assets/main-contant/fifth/yosi.png">
+          </div>
+          <div class="chef-text">
+            <p>Chef Yossi Shitrit has been living and breathing<br>
+            his culinary dreams for more than two<br>
+            decades, including running the kitchen in his<br>
+            first restaurant, the fondly-remembered Violet,<br>
+            located in Moshav  Udim. Shitrit's creativity<br>
+            and culinary  acumen born of long experience<br>
+            are expressed in the every detail of each and<br>
+            every dish.</p>
+          </div>
+      </div>
+      <div class="chef-restaurants">
+          <div class="chef-restaurants-headline">
+            Yossi's restaurants :
+          </div>
+          <div class="yossi-restaurants">
+            <swiper>
+              <app-card-small *ngFor="let chefCard of chefCards" [chefCard]="chefCard" fxHide.gt-xs='true'></app-card-small>
+            </swiper>
+            <app-card-small *ngFor="let chefCard of chefCards" [chefCard]="chefCard" fxHide.xs='true'></app-card-small>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ########### SIX CONTENT ########### -->
+
+  <div class="six-content">
+    <div class="about-us-box">
+        <div class="about-us-headline">
+          ABOUT US :
+        </div>
+        <div class="text-icon-group">
+          <div class="simple-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. In a lacus vel justo fermentum bibendum non
+            eu ipsum. Cras porta malesuada eros, eget blandit
+             turpis suscipit at.  Vestibulum sed massa in magna
+             sodales porta.  Vivamus elit urna,
+            dignissim a vestibulum.
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. In a lacus vel justo fermentum bibendum no
+            eu ipsum. Cras porta malesuada eros.
+          </div>
+          <div class="big-icon">
+            <img class="bigIconImage" src="../../../assets/main-contant/six/about-logo.png">
+          </div>
+        </div>
+        <div class="apple-google-icons">
+          <div class="apple-group">
+            <div class="logo-apple">
+              <img src="../../../assets/main-contant/six/apple-logo.svg" width=15vw; height=auto;>
+            </div>
+            <div class="headline-apple-top">
+              <div class="a-bold-up">
+              Download on the
+              </div>
+              <div class="a-bottom-bold">
+              App Store
+              </div>
+            </div>
+          </div>
+          <div class="google-group">
+            <div class="logo-google">
+              <img src="../../../assets/main-contant/six/google-logo.svg" width=12vw; height=auto;>
+            </div>
+            <div class="headline-google-top">
+              <div class="g-bold-up">
+              Get it on
+              </div>
+              <div class="g-bottom-bold">
+              Google Play
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+    <!-- ########### FOOTER CONTENT ########### -->
+
+  </div>
+
+
+</div>
+
+

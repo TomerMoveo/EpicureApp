@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:200,500&display=swap");
+.footer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.footer .names-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Gothic A1";
+  font-weight: 200;
+  font-size: 0.6vw;
+}
+
+.footer .names-group .contact-us {
+  padding-left: 12vw;
+}
+
+.footer .names-group .privacy-policy {
+  padding-right: 12vw;
+}
+
+.mobile .footer {
+  height: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mobile .footer .names-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Gothic A1";
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.mobile .footer .names-group .contact-us {
+  padding-left: 0;
+  padding-top: 4%;
+}
+
+.mobile .footer .names-group .terms-of-use {
+  padding-top: 4%;
+}
+
+.mobile .footer .names-group .privacy-policy {
+  padding-top: 4%;
+  padding-right: 0;
+}
+/*# sourceMappingURL=footer.component.css.map */

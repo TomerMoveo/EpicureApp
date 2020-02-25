@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,500,600&display=swap");
+.pupopularRestaurants {
+  padding-left: 6px;
+}
+
+.pupopularRestaurants .card {
+  width: 280px;
+  background-color: #fcf3e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pupopularRestaurants .card .images {
+  width: 280px;
+  height: auto;
+}
+
+.pupopularRestaurants .card .title {
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 28px;
+  word-spacing: 3px;
+  color: black;
+  margin-top: 18px;
+}
+
+.pupopularRestaurants .card .chefName {
+  font-weight: 100;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: #535353;
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+
+.mobile .pupopularRestaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+.mobile .pupopularRestaurants .card {
+  width: 75%;
+}
+
+.mobile .pupopularRestaurants .card .images {
+  width: 100%;
+  height: auto;
+}
+
+.mobile .pupopularRestaurants .card .title {
+  font-family: "Muli";
+  font-weight: 400;
+  font-size: 28px;
+  word-spacing: 3px;
+  color: black;
+  margin-top: 18px;
+}
+
+.mobile .pupopularRestaurants .card .chefName {
+  font-weight: 100;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: #535353;
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+/*# sourceMappingURL=popular-resturants.component.css.map */

@@ -1,0 +1,488 @@
+// Gothic
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:200,500&display=swap');
+// Muli
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600&display=swap');
+
+// # DESKTOP Variables # //
+
+$colortext: rgb(88, 88, 88);
+$backgroundheader: #ffffff85;
+$fontstyleGothic: "Gothic A1";
+
+@mixin fontMuli ($style-weight){
+  font-family: "Muli";
+  font-weight: $style-weight;
+}
+@mixin flexCenter ($direction){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+@mixin grid-3-photos ($gap){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $gap;
+}
+@mixin grid-2-photos ($gap){
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gap;
+}
+@mixin bordersColor {
+  border-radius: 5px;
+  border: 1px solid #a8a8a8;
+}
+
+/* ########### FIRST CONTENT ########### */
+.flex-main {
+  color: $colortext;
+  font-family: $fontstyleGothic;
+  font-weight: 200;
+  }
+
+.first-content {
+  background-image: url(../../../assets/main-contant/hero-picture.jpg);
+  width: 100%;
+  height: 696px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-box-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16.5%;
+  .box-elements{
+    background-color: rgba(255, 255, 255, 0.788);
+    padding-left: 16%;
+    padding-right: 16%;
+  }
+}
+
+.epicure-headline {
+  font-size: 1.8vw;
+  padding-top: 10%;
+  word-spacing: 0.2em;
+}
+.search-box-text {
+  @include flexCenter(row);
+  font-size: 1vw;
+  @include bordersColor();
+  margin-bottom: 9%;
+  .search-icon {
+    padding-top: 8px;
+    margin-top: 2%;
+    margin-right: 0.5vw;
+    width:18px;
+    height:auto;
+  }
+  .search-text {
+    margin-top: 2%;
+    word-spacing: 0.2em;
+  }
+}
+
+/* ########### SECOND CONTENT ########### */
+
+.second-content {
+  @include flexCenter(column);
+  margin-top: 6%;
+
+.headlinePopular {
+  padding-bottom: 3%;
+  word-spacing: 0.3em;
+  font-size: 23px;
+}
+.restaurantsImageGroup {
+display: flex;
+flex-direction: column;
+
+.images {
+  display: flex;
+  flex-direction: row;
+}
+
+.allRestaurantsText {
+  @include fontMuli(900);
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: flex-end;
+  }
+}
+
+}
+
+/* ########### THIRD CONTENT ########### */
+
+.third-content {
+  @include flexCenter(column);
+  padding-top: 4%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.signatureDishCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.signature-dish-text {
+  padding-bottom: 6%;
+  word-spacing: 0.3em;
+  font-size: 23px;
+}
+
+/* ########### FOURTH CONTENT ########### */
+
+.fourth-content {
+  @include flexCenter(column);
+  margin-top: 2.5vw;
+  background-color: #ececec;
+}
+.meaning-icons-text {
+  margin-top: 1.2vw;
+  word-spacing: 0.5em;
+  font-size: 15px;
+}
+.icons-meaning-table {
+  margin-top: 1vw;
+  .icons-meaning {
+    @include grid-3-photos(4vw);
+    .imageMeaning {
+      width: 45px;
+      height: auto;
+    }
+  }
+}
+.icons-names-group {
+  margin-top: 0.7vw;
+  margin-bottom: 1vw;
+}
+.icons-names {
+  word-spacing: 40px;
+  font-size: 0.9em;
+}
+
+/* ########### FIFTH CONTENT ########### */
+
+.fifth-content {
+  @include flexCenter(column);
+  margin-top: 2.5vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.chef-week-headline {
+  word-spacing: 0.5em;
+  font-size: 0.95em;
+  padding-left: 35%;
+}
+.picture-text-group {
+  @include flexCenter(row);
+  @include grid-2-photos(0.2em);
+  .chef-text {
+    font-size: 0.8em;
+    padding-bottom: 3.8em;
+  }
+  .chef-picture {
+    padding-left: 0.6em;
+    .yossi-image {
+      width: 270px;
+      height: auto;
+    }
+  }
+}
+.chef-restaurants-headline {
+  padding-left: 2%;
+}
+  .yossi-restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 2%;
+  }
+
+
+
+/* ########### SIX CONTENT ########### */
+
+.six-content {
+  @include flexCenter(column);
+  margin-top: 2.5vw;
+  background-color: #ececec;
+}
+.about-us-box {
+  padding-top: 4%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.about-us-headline {
+  word-spacing: 0.2em;
+  padding-bottom: 1.5%;
+  position: relative;
+  right: 10%;
+}
+.text-icon-group {
+  @include flexCenter(row);
+  .simple-text {
+  font-size: 0.8em;
+  position: relative;
+  right: 10%;
+  }
+  .big-icon {
+    position: relative;
+    left: 20%;
+    .bigIconImage {
+      width: 150px;
+      height: auto;
+    }
+  }
+}
+.apple-google-icons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  right: 10%;
+  padding-bottom: 8%;
+  padding-top: 4%;
+
+  .apple-group {
+    display: flex;
+    @include bordersColor();
+    width: 120px;
+    .logo-apple{
+      padding-top: 4%;
+      padding-right: 4%;
+      padding-left: 3%;
+    }
+    .headline-apple-top{
+      @include flexCenter(column);
+      text-align: center;
+      @include fontMuli(800);
+      padding-left: 0.2vw;
+        .a-bold-up {
+          font-size: 0.4em;
+        }
+        .a-bottom-bold {
+          font-size: 14px;
+        }
+      }
+  }
+  .google-group {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 3%;
+    width: 120px;
+    @include bordersColor();
+    .logo-google {
+      padding-top: 4%;
+      padding-left: 6%;
+      padding-right: 4%;
+    }
+    .headline-google-top {
+      @include flexCenter(column);
+      @include fontMuli(800);
+      padding-left: 0.2vw;
+      font-size: 0.3em;
+        .g-bold-up {
+          font-size: 0.4em;
+        }
+        .g-bottom-bold {
+          font-size: 14px;
+        }
+      }
+  }
+
+}
+
+/* ########################################### MOBILE DESIGN ########################################### */
+
+.mobile {
+  swiper {
+    width: 100vw;
+  }
+  .flex-main {
+    width: 360px;
+  }
+  .first-content {
+    background-image: url(../../../assets/main-contant/mobile/bg-image-mobile.png);
+
+    height: 269px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .box-elements {
+      width: 60vw;
+      height: 32vw;
+      margin-top: 3vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .search-box-text {
+        margin-bottom: 0px;
+        margin-top: 10px;
+        width: 220px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px 10px;
+        .search-icon {
+          padding-top: 0px;
+          width: 14px;
+          display: flex;
+          align-self: center;
+        }
+        .search-text {
+          display: flex;
+          align-self: center;
+          margin-top: 0;
+          font-size: 2.7vw;
+          margin-left: 14px;
+          word-spacing: 3px;
+        }
+      }
+    }
+    .epicure-headline {
+      font-size: 4.6vw;
+      text-align: center;
+    }
+  }
+  .gold-buttons {
+    background-color: #f0f0f0;
+    opacity: 0.9;
+    padding-top: 9%;
+    .buttons-text-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 9%;
+    }
+      .text-chefs {
+        @include fontMuli(900);
+        background-color: rgba(232 ,196 ,122, 0.8);
+        font-size: 13px;
+        display: flex;
+        align-self: center;
+        padding: 4%;
+        margin-right: 10px;
+      }
+      .text-restaurants {
+        @include fontMuli(800);
+        background-color: rgba(232 ,196 ,122, 0.8);
+        font-size: 13px;
+        display: flex;
+        align-self: center;
+        padding: 4%;
+        margin-left: 10px;
+      }
+    }
+
+/* ########### MOBILE SECOND ########### */
+
+.second-content {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  .headlinePopular {
+    font-size: 15px;
+    padding-bottom: 5%;
+  }
+}
+
+/* ########### MOBILE THIRD ########### */
+.third-content {
+  padding-top: 18%;
+  .signature-dish-text {
+      font-size: 15px;
+  }
+}
+
+/* ########### MOBILE FOURTH ########### */
+
+.fourth-content {
+    margin-top: 18%;
+    margin-bottom: 15%;
+    height: 150px;
+    display: flex;
+    justify-content: end;
+    .meaning-icons-text {
+      font-size: 12px;
+      margin-top: 15px;
+    }
+    .icons-meaning {
+      @include grid-3-photos(45px);
+      margin-top: 15px;
+      .imageMeaning {
+        width: 35px;
+      }
+    }
+  .icons-names {
+    font-size: 13px;
+    word-spacing: 38px;
+  }
+}
+
+/* ########### MOBILE FIFTH ########### */
+
+    .chef-week-headline {
+      font-size: 12px;
+      word-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+    }
+  .picture-text-group {
+    @include flexCenter(column);
+    margin-top: 10px;
+    .chef-text {
+      font-size: 10px;
+      padding-bottom: 0;
+      text-align: center;
+    }
+    .chef-picture {
+      padding-left: 0;
+    }
+  }
+  .chef-restaurants-headline {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+/* ########### MOBILE SIX ########### */
+
+  .six-content {
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+
+    .about-us-headline {
+      font-size: 13px;
+      text-align: center;
+      right: 0;
+    }
+    .text-icon-group {
+      flex-direction: column;
+      align-items: flex-start;
+      .simple-text {
+        width: 220px;
+        font-size: 12px;
+        text-align: center;
+        right: 0;
+      }
+      .bigIconImage {
+        width: 120px;
+        margin-top: 30px;
+      }
+    }
+    .apple-google-icons {
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 50px;
+    }
+  }
+
+
+  }
+
